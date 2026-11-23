@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>EL PORTAL DE TUS NOMBRES EN LA REALIDAD VIRTUAL</title>
+
+<meta property="og:title" content="EL PORTAL DE TUS NOMBRES EN LA REALIDAD VIRTUAL">
+<meta property="og:site_name" content="EL PORTAL">
+<meta property="og:description" content="EL PORTAL DE TUS NOMBRES EN LA REALIDAD VIRTUAL">
+<meta property="og:type" content="website">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+// Título que scrollea como en 1999
+var msg = " ** EL PORTAL DE TUS NOMBRES EN LA REALIDAD VIRTUAL ** - Welcome to my world ";
+var pos = 0;
+var spacer = " ... ";
+var time_length = 100;
+function ScrollTitle()
+{
+ document.title = msg.substring(pos, msg.length) + spacer + msg.substring(0, pos);
+ pos++;
+ if (pos > msg.length) pos = 0;
+ window.setTimeout(ScrollTitle, time_length);
+}
+ScrollTitle();
+</script>
+
+<style>
+body {
+  background-color: #000;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 90px 80px, #ff0, transparent),
+    radial-gradient(2px 2px at 160px 40px, #fff, transparent),
+    radial-gradient(1px 1px at 230px 120px, #0ff, transparent),
+    radial-gradient(2px 2px at 300px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 380px 150px, #f0f, transparent),
+    radial-gradient(1px 1px at 60px 180px, #fff, transparent),
+    radial-gradient(2px 2px at 450px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 520px 110px, #ff0, transparent),
+    radial-gradient(1px 1px at 600px 60px, #fff, transparent);
+  background-size: 650px 220px;
+  text-align: center;
+}
+body, td, th {
+  color: #FF0;
+}
+body, td, th, h1, h2 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1 {
+  color: #F0F;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 3px 3px 0 #00F;
+}
+h2 {
+  color: #0FF;
+  text-transform: uppercase;
+}
+marquee {
+  background: #3F0;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  border: 3px ridge #FF0;
+}
+blink, .blink {
+  animation: parpadeo 1s steps(1) infinite;
+}
+@keyframes parpadeo {
+  50% { opacity: 0; }
+}
+.antorcha {
+  display: inline-block;
+  font-size: 60px;
+  animation: flama 0.4s ease-in-out infinite alternate;
+}
+@keyframes flama {
+  from { transform: scale(1) rotate(-3deg); }
+  to   { transform: scale(1.15) rotate(3deg); }
+}
+.titulo-arcoiris span { text-shadow: 2px 2px 0 #000; }
+.barra {
+  height: 30px;
+  background: repeating-linear-gradient(45deg, #FF0 0 20px, #F00 20px 40px, #0F0 40px 60px, #00F 60px 80px);
+  border: 3px ridge #FFF;
+  animation: mover 2s linear infinite;
+}
+@keyframes mover {
+  from { background-position: 0 0; }
+  to   { background-position: 160px 0; }
+}
+.boton-new {
+  display: inline-block;
+  background: #F00;
+  color: #FF0;
+  border: 3px outset #FF0;
+  padding: 4px 10px;
+  font-weight: bold;
+  font-family: "Comic Sans MS", cursive;
+  text-decoration: none;
+  animation: parpadeo 1.5s steps(1) infinite;
+}
+.foto {
+  display: inline-block;
+  margin: 6px;
+  padding: 6px;
+  background: #FFF;
+  border: 4px ridge #0FF;
+  box-shadow: 4px 4px 0 #F0F;
+  color: #000;
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+}
+.foto .hueco {
+  width: 170px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-conic-gradient(#CCC 0 25%, #FFF 0 50%) 0 0 / 30px 30px;
+  font-size: 60px;
+}
+.foto .pie {
+  font-size: 12px;
+  font-weight: bold;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  color: #006;
+  width: 300px;
+}
+.webring {
+  background: #FFF;
+  border: 5px ridge #9268cc;
+}
+.contador {
+  display: inline-block;
+  background: #000;
+  color: #0F0;
+  border: 3px inset #0F0;
+  font-family: "Courier New", monospace;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 2px 10px;
+  letter-spacing: 4px;
+}
+.embed {
+  width: 600px;
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.embed .two {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #0C3;
+  border: 4px ridge #FF0;
+}
+.firma {
+  background: #FFF;
+  color: #00F;
+  border: 3px dashed #F0F;
+  padding: 15px;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  font-family: "Comic Sans MS", cursive;
+}
+a { color: #0FF; }
+a:hover { color: #F0F; background: #FF0; }
+small.keywords { color: #060; }
+</style>
+</head>
+
+<body>
+
+<!-- ============ CABECERA CON ANTORCHAS ============ -->
+<h1 class="titulo-arcoiris">
+  <span class="antorcha">🔥</span>
+  <span style="color:#FF0000;">E</span><span style="color:#FF5A00;">L</span>
+  <span style="color:#FFB400;">P</span><span style="color:#FFFF00;">O</span><span style="color:#A5FF00;">R</span><span style="color:#4BFF00;">T</span><span style="color:#00FF00;">A</span><span style="color:#00FF5A;">L</span>
+  <span style="color:#00FFB4;">D</span><span style="color:#00FFFF;">E</span>
+  <span style="color:#00B4FF;">T</span><span style="color:#005AFF;">U</span><span style="color:#0000FF;">S</span>
+  <span style="color:#4B00FF;">N</span><span style="color:#A500FF;">O</span><span style="color:#FF00FF;">M</span><span style="color:#FF00B4;">B</span><span style="color:#FF0066;">R</span><span style="color:#FF0000;">E</span><span style="color:#FF5A00;">S</span>
+  <span class="antorcha">🔥</span>
+</h1>
+
+<p>
+  <!-- MARQUEE: cambia el texto de bienvenida -->
+  <marquee scrollamount="30">
+    Bienvenidos al portal de TUS NOMBRES en la realidad virtual --- Welcome to portal of the TUS NOMBRES in the real virtuality
+  </marquee>
+</p>
+
+<!-- ============ VIDEO PRINCIPAL ============ -->
+<!-- Reemplaza el ID del video (vrfGHTgTImc) por el de tu video de YouTube -->
+<div class="embed">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vrfGHTgTImc"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+<!-- ============ YO YO YO ============ -->
+<h1>YO YO YO YO YO YO</h1>
+<p><span class="antorcha">🕺</span><span class="antorcha">🕺</span><span class="antorcha">🕺</span></p>
+<p class="barra"></p>
+<p>
+  <a class="boton-new" href="#">NEW!</a>
+  <a class="boton-new" href="#">DOWNLOAD!</a>
+  <a class="boton-new" href="#">FIRMA AQUI!</a>
+</p>
+
+<!-- ============ EN 3D ============ -->
+<h1>👓 EN 3D! 👓</h1>
+<p>
+  <span class="foto"><span class="hueco">🖼️</span><span class="pie">pon aquí tu imagen 3D (preview0000.gif)</span></span>
+</p>
+<p>¡Necesitas gafas anaglifo 3D para ver esta sección (o no, da igual)!</p>
+
+<!-- ============ FOTOS NUESTRAS ============ -->
+<h1>📸 ¡FOTOS NUESTRAS! 📸</h1>
+<p>
+  <!-- Cada "hueco" es una foto: cambia el emoji y el texto, o pon <img src="tus-archivos/foto1.jpg"> -->
+  <span class="foto"><span class="hueco">😎</span><span class="pie">TÚ (foto1.jpg)</span></span>
+  <span class="foto"><span class="hueco">🤠</span><span class="pie">AMIG@ 1 (foto2.jpg)</span></span>
+  <span class="foto"><span class="hueco">🥸</span><span class="pie">AMIG@ 2 (foto3.jpg)</span></span>
+  <span class="foto"><span class="hueco">🤖</span><span class="pie">AMIG@ 3 (foto4.jpg)</span></span>
+  <span class="foto"><span class="hueco">👽</span><span class="pie">AMIG@ 4 (foto5.jpg)</span></span>
+  <span class="foto"><span class="hueco">🐱</span><span class="pie">LA MASCOTA (foto6.jpg)</span></span>
+</p>
+<p class="barra"></p>
+
+<!-- ============ EN LA PRENSA ============ -->
+<h1>📰 ¡EN LA PRENSA! 📰</h1>
+<p>
+  <span class="foto"><span class="hueco">🗞️</span><span class="pie">portada de revista (prensa1.jpg)</span></span>
+  <span class="foto"><span class="hueco">📺</span><span class="pie">en la tele (prensa2.jpg)</span></span>
+  <span class="foto"><span class="hueco">📻</span><span class="pie">en la radio (prensa3.jpg)</span></span>
+</p>
+
+<!-- ============ MI CARNET ============ -->
+<h1>🪪 ¡MI CARNET! 🪪</h1>
+<p>
+  <span class="foto"><span class="hueco">🆔</span><span class="pie">tu carnet oficial (carnet.jpg)</span></span>
+</p>
+
+<!-- ============ YO DE NIÑO ============ -->
+<h1>👶 ¡YO DE NIÑO! :3 👶</h1>
+<p>
+  <span class="foto"><span class="hueco">🍼</span><span class="pie">tú de bebé (nino1.jpg)</span></span>
+  <span class="foto"><span class="hueco">🧸</span><span class="pie">tú en el kínder (nino2.jpg)</span></span>
+</p>
+
+<!-- ============ MIS MEMES ============ -->
+<h1>😂 ¡NUESTROS MEMES! 😂</h1>
+<p>
+  <span class="foto"><span class="hueco">🗿</span><span class="pie">meme 1 (meme1.gif)</span></span>
+  <span class="foto"><span class="hueco">🔥</span><span class="pie">meme 2 (meme2.gif)</span></span>
+  <span class="foto"><span class="hueco">💀</span><span class="pie">meme 3 (meme3.gif)</span></span>
+</p>
+
+<!-- ============ WEBRING ============ -->
+<table class="webring" width="300" border="1" align="center" cellpadding="1" cellspacing="1" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+      <td align="center" bgcolor="#63a4c0" nowrap="nowrap">
+        <font color="#ffffff" face="georgia">Únete al <a href="#"><font color="blue">WebRing de TUS NOMBRES</font></a>
+        <font size="-1">The <b>VERY 1st</b> WebRing<br />©2001-10 <a href="#"><font color="blue">Questions</font></a> <a href="#"><font color="blue">Help</font></a></font></font>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <table cellspacing="2" bgcolor="#ffffff" border="3" bordercolor="#9268cc" cellpadding="3" width="300">
+          <tbody>
+            <tr>
+              <td width="100"><span style="font-size:50px;">🌐</span></td>
+              <td align="center" nowrap="nowrap">
+                (<a href="#">Next Site</a>) (<a href="#">Skip Next</a>)<br />
+                (<a href="#">Prev Site</a>) (<a href="#">Skip Prev</a>)<br />
+                <a href="#">Full Member List</a>
+              </td>
+              <td><span style="font-size:50px;">💿</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============ LIBRO DE VISITAS + CONTADOR ============ -->
+<h2>📖 ¡Firma el libro de visitas! 📖</h2>
+<p class="firma">
+  Escribe tu mensaje aquí... (esto es decorativo, ¡pero podrías enlazar un libro de visitas real!)<br /><br />
+  <b>1999:</b> hola buenas pagina muy buena 10/10<br />
+  <b>2001:</b> pasa por mi web!!!<br />
+  <b>2003:</b> primera vez aqui saludos desde el ciber
+</p>
+
+<h2>¡Mira como suben las visitas!</h2>
+<p><span class="contador" id="contador">000000</span></p>
+
+<!-- ============ AUDIO ============ -->
+<p>🎧 Música de ambiente de la página 🎧</p>
+<!-- Pon tu propio mp3 en la carpeta y cámbiale el nombre aquí abajo -->
+<audio controls>
+  <source src="musica.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio. ¡Qué vergüenza!
+</audio>
+
+<!-- ============ REDES ============ -->
+<h2>
+  <a class="boton-new" href="#">tWITTER:</a>
+  <a href="https://www.twitter.com/TU_USUARIO">@TU_USUARIO</a>
+  <a class="boton-new" href="#">INSTAGRAM:</a>
+  <a href="https://www.instagram.com/TU_USUARIO">@TU_USUARIO</a>
+</h2>
+
+<!-- ============ REQUISITOS (CHISTE) ============ -->
+<p>Este sitio sólo se ve bien con resolución 800*200, Chispoqueso Explorer 5.1, 16 millones de colores,
+Tio Pelado player instalado, Guaripolo Antivirus, las tipografías "Comic Sans", "Papyrus", "Times" y "Comic Sans".
+Gafas anaglifo 3D, soporte para sonidos MIDI y al menos 3 amigos conectados al mIRC.</p>
+
+<p><small class="keywords">tus nombres amigos risas memes fotos 31 minutos corbatas pizza videojuegos musica verano vacaciones world wide web 2.0 3d puppet sillicon valley parangaricutirimicuaro</small></p>
+
+<script>
+// Contador de visitas falso-pero-real (guarda el número en tu navegador)
+(function () {
+  var clave = "visitas_portal_tus_nombres";
+  var n = parseInt(localStorage.getItem(clave) || "0", 10) + 1;
+  localStorage.setItem(clave, n);
+  var s = String(n);
+  while (s.length < 6) s = "0" + s;
+  document.getElementById("contador").textContent = s;
+})();
+</script>
+
+</body>
+</html>
