@@ -108,13 +108,16 @@ blink, .blink {
 .foto {
   display: inline-block;
   margin: 6px;
-  padding: 6px;
-  background: #FFF;
-  border: 4px ridge #0FF;
-  box-shadow: 4px 4px 0 #F0F;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
   color: #000;
   font-family: "Comic Sans MS", cursive;
   text-align: center;
+}
+.foto img {
+  display: block;
 }
 .foto .hueco {
   width: 170px;
@@ -138,6 +141,19 @@ blink, .blink {
   display: block;
   width: 100%;
   height: 100%;
+}
+.foto-libre {
+  display: inline-block;
+  margin: 6px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.foto-libre img {
+  display: block;
+  width: 420px;
+  height: auto;
 }
 table {
   margin-left: auto;
@@ -297,7 +313,7 @@ small.keywords { color: #060; }
 <!-- ============ EN LA PRENSA ============ -->
 <h1>📰 ¡EN LA PRENSA! 📰</h1>
 <p>
-  <span class="foto"><img src="enlaprensa1.jpg" width="170" height="190" alt="En la prensa" /></span>
+  <span class="foto-libre"><img src="enlaprensa1.jpg" alt="En la prensa" /></span>
   <span class="foto"><span class="hueco">📺</span><span class="pie">en la tele (prensa2.jpg)</span></span>
   <span class="foto"><span class="hueco">📻</span><span class="pie">en la radio (prensa3.jpg)</span></span>
 </p>
