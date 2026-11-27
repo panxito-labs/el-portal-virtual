@@ -1,0 +1,12 @@
+# IMPORTANTE: este repo es SOLO para el portal web.
+# Todo lo demas en esta carpeta son otros proyectos personales que NO se suben.
+
+# Ignorar todo por defecto
+*
+
+# Excepto los archivos del portal
+!index.html
+!README.md
+!.gitignore
+!*.gif
+!*.mp3
