@@ -202,42 +202,15 @@ table {
   padding: 8px 0;
   overflow: hidden;
 }
-.cc-superior {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 6px;
+.cc-barra {
+  display: block;
+  width: 720px;
+  max-width: 98%;
+  margin: 0 auto;
 }
-.cc-senal {
-  width: 44px;
-  height: 44px;
-  background: #FFD700;
-  border: 3px solid #000;
-  transform: rotate(45deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.cc-senal span {
-  transform: rotate(-45deg);
-  font-size: 22px;
-}
-.cc-cinta {
-  flex: 1;
-  background: repeating-linear-gradient(45deg, #FFD700 0 18px, #000 18px 36px);
-  border: 3px solid #000;
-  padding: 6px;
-  text-align: center;
-}
-.cc-cinta span {
-  background: #FFD700;
-  color: #000;
-  font-family: "Arial Black", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  padding: 2px 14px;
+.gif-deco {
+  vertical-align: middle;
+  margin: 0 6px;
 }
 .cc-inferior {
   display: flex;
@@ -256,36 +229,7 @@ table {
 .cc-derecha {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-.cc-monitor {
-  background: #DDD;
-  border: 3px solid #000;
-  border-radius: 6px;
-  padding: 6px;
-}
-.cc-pantalla {
-  width: 75px;
-  height: 55px;
-  background: linear-gradient(#39F, #CEF);
-  border: 2px solid #000;
-  position: relative;
-}
-.cc-pantalla::after {
-  content: "";
-  position: absolute;
-  top: 4px; left: 5px; right: 5px;
-  height: 12px;
-  background: #FFF;
-  border-bottom: 2px solid #39F;
-}
-.cc-new {
-  color: #FF0;
-  font-family: "Comic Sans MS", cursive;
-  font-weight: bold;
-  font-size: 30px;
-  text-shadow: 2px 2px 0 #000;
-  transform: rotate(180deg);
+  gap: 8px;
 }
 
 a { color: #0FF; }
@@ -326,22 +270,35 @@ small.keywords { color: #060; }
 <!-- ============ YO YO YO ============ -->
 <h1>YO YO YO YO YO YO</h1>
 <p><img src="bailarines_opt.gif" class="bailarin" width="110" height="110" alt="Bailarines" /><img src="bailarines_opt.gif" class="bailarin" width="110" height="110" alt="Bailarines" /><img src="bailarines_opt.gif" class="bailarin" width="110" height="110" alt="Bailarines" /></p>
+
+<!-- ============ UNDER CONSTRUCTION ============ -->
+<div class="construccion">
+  <img src="5consbar2_e0.gif" class="cc-barra" width="574" height="51" alt="UNDER CONSTRUCTION" />
+  <div class="cc-inferior">
+    <img src="vaca.gif" class="cc-vaca" width="130" alt="Vaca caminando" />
+    <div class="cc-derecha">
+      <a href="#"><img src="graphics-new-buttons-203546.gif" width="77" height="54" alt="NEW!" /></a>
+      <img src="graphics-download-698642.gif" width="65" height="80" alt="Disquete" />
+    </div>
+  </div>
+</div>
+
 <p class="barra"></p>
 <p>
-  <a class="boton-new" href="#">NEW!</a>
+  <a href="#"><img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" /></a>
   <a class="boton-new" href="#">DOWNLOAD!</a>
   <a class="boton-new" href="#">FIRMA AQUI!</a>
 </p>
 
 <!-- ============ EN 3D ============ -->
-<h1>👓 EN 3D! 👓</h1>
+<h1><img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" />EN 3D!<img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" /></h1>
 <p>
   <span class="foto"><span class="hueco">🖼️</span><span class="pie">pon aquí tu imagen 3D (preview0000.gif)</span></span>
 </p>
 <p>¡Necesitas gafas anaglifo 3D para ver esta sección (o no, da igual)!</p>
 
 <!-- ============ FOTOS NUESTRAS ============ -->
-<h1>📸 ¡FOTOS NUESTRAS! 📸</h1>
+<h1><img src="graphics-download-698642.gif" class="gif-deco" width="65" height="80" alt="Descarga" />¡FOTOS NUESTRAS!<img src="graphics-download-698642.gif" class="gif-deco" width="65" height="80" alt="Descarga" /></h1>
 <p>
   <!-- Cada "hueco" es una foto: cambia el emoji y el texto, o pon <img src="tus-archivos/foto1.jpg"> -->
   <span class="foto"><span class="hueco">😎</span><span class="pie">TÚ (foto1.jpg)</span></span>
@@ -381,22 +338,6 @@ small.keywords { color: #060; }
   <span class="foto"><span class="hueco">🔥</span><span class="pie">meme 2 (meme2.gif)</span></span>
   <span class="foto"><span class="hueco">💀</span><span class="pie">meme 3 (meme3.gif)</span></span>
 </p>
-
-<!-- ============ UNDER CONSTRUCTION ============ -->
-<div class="construccion">
-  <div class="cc-superior">
-    <div class="cc-senal"><span>👷</span></div>
-    <div class="cc-cinta"><span>UNDER CONSTRUCTION</span></div>
-    <div class="cc-senal"><span>🚧</span></div>
-  </div>
-  <div class="cc-inferior">
-    <img src="vaca.gif" class="cc-vaca" alt="Vaca caminando" />
-    <div class="cc-derecha">
-      <div class="cc-new">NEW!</div>
-      <div class="cc-monitor"><div class="cc-pantalla"></div></div>
-    </div>
-  </div>
-</div>
 
 <!-- ============ WEBRING ============ -->
 <table class="webring" width="300" border="1" align="center" cellpadding="1" cellspacing="1" bgcolor="#ffffff">
@@ -449,10 +390,11 @@ small.keywords { color: #060; }
 
 <!-- ============ REDES ============ -->
 <h2>
-  <a class="boton-new" href="#">tWITTER:</a>
-  <a href="https://www.twitter.com/TU_USUARIO">@TU_USUARIO</a>
-  <a class="boton-new" href="#">INSTAGRAM:</a>
-  <a href="https://www.instagram.com/TU_USUARIO">@TU_USUARIO</a>
+  <img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" /><img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" />
+  tWITTER: <a href="https://www.twitter.com/TU_USUARIO">@TU_USUARIO</a>
+  <img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" /><img src="graphics-new-buttons-203546.gif" class="gif-deco" width="77" height="54" alt="NEW!" />
+  <br />
+  INSTAGRAM: <a href="https://www.instagram.com/TU_USUARIO">@TU_USUARIO</a>
 </h2>
 
 <!-- ============ REQUISITOS (CHISTE) ============ -->
